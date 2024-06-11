@@ -16,5 +16,5 @@ class Producto(models.Model):
     fecha_registro = models.DateTimeField(auto_now_add=True)
     imagen = models.ImageField(upload_to='productos', null=True, blank=True)
 
-    def __str__(self) -> str:
+    def __str__(self):
         return self.nombre  
