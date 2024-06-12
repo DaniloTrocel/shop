@@ -5,7 +5,7 @@ class Categoria(models.Model):
     nombre = models.CharField(max_length=200)
     fercha_registro = models.DateTimeField(auto_now_add=True)
 
-    def __str__(self) -> str:
+    def __str__(self):
         return self.nombre
     
 class Producto(models.Model):
